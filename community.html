@@ -110,7 +110,9 @@
                 Sign up to get Discord access, the monthly newsletter, and free resources. No spam. Unsubscribe any time.
               </p>
 
-              <form id="join-form" class="form" novalidate aria-label="Community join form">
+              <form id="join-form" class="form" name="community" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" novalidate aria-label="Community join form">
+                <input type="hidden" name="form-name" value="community">
+                <p class="bot-field"><label>Skip this: <input name="bot-field"></label></p>
                 <div class="fg">
                   <label class="fl" for="j-name">First Name</label>
                   <input class="fi" type="text" id="j-name" name="name" placeholder="First name" autocomplete="given-name">

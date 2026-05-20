@@ -160,10 +160,18 @@
 
     if (btn) { btn.textContent = 'Sending…'; btn.disabled = true; }
 
-    setTimeout(() => {
-      form.style.display = 'none';
-      if (success) success.classList.add('show');
-    }, 900);
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams(new FormData(form)).toString()
+    })
+      .then(() => {
+        form.style.display = 'none';
+        if (success) success.classList.add('show');
+      })
+      .catch(() => {
+        if (btn) { btn.textContent = 'Error — please try again'; btn.disabled = false; }
+      });
   });
 })();
 
@@ -183,9 +191,18 @@
       return;
     }
     if (btn) { btn.textContent = 'Joining…'; btn.disabled = true; }
-    setTimeout(() => {
-      form.style.display = 'none';
-      if (success) success.classList.add('show');
-    }, 800);
+
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams(new FormData(form)).toString()
+    })
+      .then(() => {
+        form.style.display = 'none';
+        if (success) success.classList.add('show');
+      })
+      .catch(() => {
+        if (btn) { btn.textContent = 'Error — please try again'; btn.disabled = false; }
+      });
   });
 })();

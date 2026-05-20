@@ -102,7 +102,9 @@
 
           <!-- Right: form -->
           <div class="sr d2">
-            <form id="contact-form" class="form" novalidate aria-label="Contact form">
+            <form id="contact-form" class="form" name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" novalidate aria-label="Contact form">
+              <input type="hidden" name="form-name" value="contact">
+              <p class="bot-field"><label>Skip this: <input name="bot-field"></label></p>
 
               <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px;">
                 <div class="fg">
