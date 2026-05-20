@@ -462,7 +462,13 @@ body.is-home #nav:not(.scrolled) .hamburger span { background: rgba(255,255,255,
   margin-bottom: 32px; color: var(--text-light);
 }
 .quote-attr {
-  display: flex; flex-direction: column; align-items: center; gap: 4px;
+  display: flex; flex-direction: column; align-items: center; gap: 8px;
+}
+.quote-avatar {
+  width: 72px; height: 72px; border-radius: 50%;
+  object-fit: cover; object-position: center top;
+  border: 2px solid rgba(249,115,22,.5);
+  margin-bottom: 4px;
 }
 .quote-name {
   font-family: var(--f-disp); font-weight: 700; font-size: 16px;
