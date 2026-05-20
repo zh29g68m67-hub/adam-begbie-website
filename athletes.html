@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Athletes — Adam Begbie S&C Coach & Sport Scientist</title>
+  <meta name="description" content="Athletes coached by Adam Begbie — rugby, football, athletics, and combat sports. See the results and read what athletes say about working together.">
+  <link rel="icon" href="assets/images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <a href="#main" class="skip">Skip to main content</a>
+
+  <nav id="nav" role="navigation" aria-label="Main navigation">
+    <a href="index.html" class="nav-logo">AB<b>.</b></a>
+    <div class="nav-links">
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="athletes.html" class="active">Athletes</a>
+      <a href="blog.html">Research</a>
+      <a href="contact.html" class="nav-cta">Work With Me</a>
+    </div>
+    <button class="hamburger" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob-nav">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <nav id="mob-nav" aria-label="Mobile navigation" aria-hidden="true">
+    <a href="about.html"    class="mlink">About</a>
+    <a href="services.html" class="mlink">Services</a>
+    <a href="athletes.html" class="mlink">Athletes</a>
+    <a href="blog.html"     class="mlink">Research</a>
+    <a href="contact.html"  class="mlink">Contact</a>
+  </nav>
+
+  <main id="main">
+
+    <!-- ── PAGE HEADER ──────────────────────────── -->
+    <header class="page-header">
+      <div class="container">
+        <p class="lbl">Athletes</p>
+        <h1 class="section-head">The People<br>I Work With</h1>
+        <p>A growing roster of athletes from sport, academy, and elite level — each with different goals, the same commitment to getting better.</p>
+      </div>
+    </header>
+
+    <!-- ── FILTER + GRID ────────────────────────── -->
+    <section class="section-pad" aria-labelledby="athletes-h">
+      <div class="container">
+
+        <div class="filter-bar" role="group" aria-label="Filter athletes by sport" data-filter-group="athletes">
+          <button class="filter-btn active" data-filter="all">All Sports</button>
+          <button class="filter-btn" data-filter="rugby">Rugby</button>
+          <button class="filter-btn" data-filter="football">Football</button>
+          <button class="filter-btn" data-filter="athletics">Athletics</button>
+          <button class="filter-btn" data-filter="combat">Combat Sports</button>
+        </div>
+
+        <h2 id="athletes-h" class="sr-only">Athlete Showcase</h2>
+
+        <div class="athletes-grid">
+
+          <article class="athlete-card sr" data-filter-target="athletes" data-sport="athletics">
+            <div class="athlete-photo">
+              <!-- [PHOTO: Jamie Thornton — 400m sprinter, track setting] -->
+              <img src="https://placehold.co/400x533/D9D4CC/6B6558?text=ATHLETE" alt="Jamie Thornton — 400m Sprinter">
+            </div>
+            <div class="athlete-info">
+              <p class="athlete-sport">Athletics</p>
+              <h3 class="athlete-name">Jamie Thornton</h3>
+              <p class="athlete-quote">"Went from stress fracture to national finalist in 14 weeks. The science-led approach made all the difference."</p>
+            </div>
+          </article>
+
+          <article class="athlete-card sr d1" data-filter-target="athletes" data-sport="rugby">
+            <div class="athlete-photo">
+              <!-- [PHOTO: Craig Muir — rugby player, field or gym setting] -->
+              <img src="https://placehold.co/400x533/D9D4CC/6B6558?text=ATHLETE" alt="Craig Muir — Rugby Player">
+            </div>
+            <div class="athlete-info">
+              <p class="athlete-sport">Rugby Union</p>
+              <h3 class="athlete-name">Craig Muir</h3>
+              <p class="athlete-quote">"18 months free of the hamstring problems that cost me two seasons. Best shape of my career."</p>
+            </div>
+          </article>
+
+          <article class="athlete-card sr d2" data-filter-target="athletes" data-sport="football">
+            <div class="athlete-photo">
+              <!-- [PHOTO: Zara Campbell — footballer, training setting] -->
+              <img src="https://placehold.co/400x533/D9D4CC/6B6558?text=ATHLETE" alt="Zara Campbell — Footballer">
+            </div>
+            <div class="athlete-info">
+              <p class="athlete-sport">Football</p>
+              <h3 class="athlete-name">Zara Campbell</h3>
+              <p class="athlete-quote">"The periodisation around my season was the best part — I peaked when it mattered and never over-trained."</p>
+            </div>
+          </article>
+
+          <article class="athlete-card sr d3" data-filter-target="athletes" data-sport="combat">
+            <div class="athlete-photo">
+              <!-- [PHOTO: Marcus Reid — MMA fighter, gym setting] -->
+              <img src="https://placehold.co/400x533/D9D4CC/6B6558?text=ATHLETE" alt="Marcus Reid — MMA Fighter">
+            </div>
+            <div class="athlete-info">
+              <p class="athlete-sport">MMA / Combat Sports</p>
+              <h3 class="athlete-name">Marcus Reid</h3>
+              <p class="athlete-quote">"Strength went up without losing an ounce of speed or endurance. The cutting protocol around fight week was exceptional."</p>
+            </div>
+          </article>
+
+          <article class="athlete-card sr" data-filter-target="athletes" data-sport="athletics">
+            <div class="athlete-photo">
+              <!-- [PHOTO: Freya Olsen — pole vaulter] -->
+              <img src="https://placehold.co/400x533/D9D4CC/6B6558?text=ATHLETE" alt="Freya Olsen — Pole Vault">
+            </div>
+            <div class="athlete-info">
+              <p class="athlete-sport">Athletics</p>
+              <h3 class="athlete-name">Freya Olsen</h3>
+              <p class="athlete-quote">"The force-velocity work was a game changer. My approach speed and plant mechanics improved more in 6 months than in the previous 3 years."</p>
+            </div>
+          </article>
+
+          <article class="athlete-card sr d1" data-filter-target="athletes" data-sport="rugby">
+            <div class="athlete-photo">
+              <!-- [PHOTO: Callum Fraser — rugby back row] -->
+              <img src="https://placehold.co/400x533/D9D4CC/6B6558?text=ATHLETE" alt="Callum Fraser — Rugby Back Row">
+            </div>
+            <div class="athlete-info">
+              <p class="athlete-sport">Rugby Union</p>
+              <h3 class="athlete-name">Callum Fraser</h3>
+              <p class="athlete-quote">"Pre-season was the hardest work I've ever done — but the carry-over into the season was unreal. Never felt so physically dominant."</p>
+            </div>
+          </article>
+
+          <article class="athlete-card sr d2" data-filter-target="athletes" data-sport="football">
+            <div class="athlete-photo">
+              <!-- [PHOTO: Ryan Lau — midfielder, training] -->
+              <img src="https://placehold.co/400x533/D9D4CC/6B6558?text=ATHLETE" alt="Ryan Lau — Footballer">
+            </div>
+            <div class="athlete-info">
+              <p class="athlete-sport">Football</p>
+              <h3 class="athlete-name">Ryan Lau</h3>
+              <p class="athlete-quote">"Working with Adam took my physical development out of the generic gym routine and into something actually designed for what football demands."</p>
+            </div>
+          </article>
+
+          <article class="athlete-card sr d3" data-filter-target="athletes" data-sport="combat">
+            <div class="athlete-photo">
+              <!-- [PHOTO: Priya Sharma — boxing] -->
+              <img src="https://placehold.co/400x533/D9D4CC/6B6558?text=ATHLETE" alt="Priya Sharma — Boxer">
+            </div>
+            <div class="athlete-info">
+              <p class="athlete-sport">Boxing</p>
+              <h3 class="athlete-name">Priya Sharma</h3>
+              <p class="athlete-quote">"My power output in the gym went up 22% in one camp cycle. Adam tracks everything — you can see exactly how far you've come."</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── STATS BAND ────────────────────────────── -->
+    <section style="background: var(--bg-alt); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);" aria-label="Key statistics">
+      <div class="container">
+        <div style="display:grid; grid-template-columns: repeat(4,1fr); border-left: 1px solid var(--border);">
+          <div style="padding: 56px 40px; border-right: 1px solid var(--border); text-align:center;" class="sr">
+            <div style="font-family:var(--f-disp); font-weight:900; font-size:clamp(52px,7vw,80px); line-height:1; color:var(--accent); margin-bottom:10px;">150+</div>
+            <div style="font-family:var(--f-disp); font-size:13px; font-weight:700; letter-spacing:.14em; text-transform:uppercase; color:var(--text-muted);">Athletes Coached</div>
+          </div>
+          <div style="padding: 56px 40px; border-right: 1px solid var(--border); text-align:center;" class="sr d1">
+            <div style="font-family:var(--f-disp); font-weight:900; font-size:clamp(52px,7vw,80px); line-height:1; color:var(--accent); margin-bottom:10px;">8+</div>
+            <div style="font-family:var(--f-disp); font-size:13px; font-weight:700; letter-spacing:.14em; text-transform:uppercase; color:var(--text-muted);">Sports Covered</div>
+          </div>
+          <div style="padding: 56px 40px; border-right: 1px solid var(--border); text-align:center;" class="sr d2">
+            <div style="font-family:var(--f-disp); font-weight:900; font-size:clamp(52px,7vw,80px); line-height:1; color:var(--accent); margin-bottom:10px;">96%</div>
+            <div style="font-family:var(--f-disp); font-size:13px; font-weight:700; letter-spacing:.14em; text-transform:uppercase; color:var(--text-muted);">Athlete Retention</div>
+          </div>
+          <div style="padding: 56px 40px; text-align:center;" class="sr d3">
+            <div style="font-family:var(--f-disp); font-weight:900; font-size:clamp(52px,7vw,80px); line-height:1; color:var(--accent); margin-bottom:10px;">14wk</div>
+            <div style="font-family:var(--f-disp); font-size:13px; font-weight:700; letter-spacing:.14em; text-transform:uppercase; color:var(--text-muted);">Fastest Return to Competition</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CTA ──────────────────────────────────── -->
+    <section class="section-pad" style="text-align:center;" aria-label="Call to action">
+      <div class="container sr">
+        <p class="lbl" style="justify-content:center;">Ready to Start?</p>
+        <h2 class="section-head" style="margin-bottom:24px;">Your Turn<br>to Level Up</h2>
+        <p style="font-size:17px; color:var(--text-muted); max-width:460px; margin:0 auto 36px; line-height:1.65;">
+          Whether you're chasing a personal best, returning from injury, or preparing for your biggest season yet — let's build your programme.
+        </p>
+        <div style="display:flex; gap:14px; justify-content:center; flex-wrap:wrap;">
+          <a href="contact.html" class="btn btn-fill">Work With Me</a>
+          <a href="case-studies.html" class="btn btn-outline">Read Case Studies</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">AB<b>.</b></a>
+          <p>Science-based strength &amp; conditioning coaching — helping athletes build the physical foundation to compete at their best.</p>
+          <div class="socials">
+            <a href="#" class="social-btn" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".5" fill="currentColor"/></svg>
+            </a>
+            <a href="#" class="social-btn" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="#" class="social-btn" aria-label="X / Twitter" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Navigate</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="athletes.html">Athletes</a></li>
+            <li><a href="case-studies.html">Case Studies</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Content</h4>
+          <ul>
+            <li><a href="blog.html">Research &amp; Blog</a></li>
+            <li><a href="training-programs.html">Online Programs</a></li>
+            <li><a href="community.html">Community</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="contact.html">Get In Touch</a></li>
+            <li><a href="mailto:adam@adambegbie.com">adam@adambegbie.com</a></li>
+            <li><a href="#">Edinburgh, Scotland</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2025 Adam Begbie. All rights reserved.</span>
+        <span>S&amp;C Coach &amp; Sport Scientist</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
