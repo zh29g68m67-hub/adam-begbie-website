@@ -246,6 +246,50 @@ ul, ol { list-style: none; }
   max-width: 560px; line-height: 1.65; margin-top: 20px;
 }
 
+/* Light variant — warm bg, dark text (Blog, Training Programs) */
+.page-header--light {
+  background: var(--bg);
+  color: var(--text);
+  border-bottom: 1px solid var(--border);
+}
+.page-header--light .lbl { color: var(--accent); }
+.page-header--light .lbl::before { background: var(--accent); }
+.page-header--light .section-head { color: var(--text); }
+.page-header--light p { color: var(--text-muted); }
+
+/* Centered variant — dark bg, centered (Contact, Community) */
+.page-header--centered .container { text-align: center; max-width: 680px; }
+.page-header--centered .lbl { justify-content: center; }
+.page-header--centered p { margin-inline: auto; }
+
+/* Split variant — heading left, large ghost accent right (About) */
+.page-header--split .container {
+  display: flex; align-items: flex-end;
+  justify-content: space-between; gap: 40px;
+}
+.ph-deco {
+  font-family: var(--f-disp); font-weight: 900;
+  font-size: clamp(90px, 14vw, 210px);
+  line-height: 1; letter-spacing: -.04em;
+  color: rgba(255,255,255,.06);
+  user-select: none; pointer-events: none;
+  flex-shrink: 0; padding-bottom: 4px;
+}
+
+/* Wide variant — heading left, description right (Services) */
+.page-header--wide .container {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: end;
+}
+.page-header--wide .ph-right p {
+  font-size: clamp(16px, 1.8vw, 20px);
+  color: rgba(255,255,255,.65); line-height: 1.65; margin-top: 0;
+}
+@media (max-width: 768px) {
+  .page-header--split .container,
+  .page-header--wide .container { display: block; }
+  .ph-deco { display: none; }
+}
+
 /* ─── HERO ────────────────────────────────────── */
 #hero {
   min-height: 100dvh;
@@ -292,13 +336,21 @@ ul, ol { list-style: none; }
 .hero-tag::before { content: ''; width: 32px; height: 2px; background: var(--accent); }
 
 .hero-name {
-  font-family: var(--f-disp); font-weight: 900;
-  font-size: clamp(80px, 14vw, 200px);
-  line-height: .87; letter-spacing: -.02em; text-transform: uppercase;
-  color: var(--text-light);
+  font-family: var(--f-disp); font-weight: 700;
+  font-size: clamp(38px, 5.5vw, 72px);
+  line-height: 1.05; letter-spacing: .01em; text-transform: uppercase;
+  color: rgba(255,255,255,.55);
   opacity: 0; animation: fadeUp .85s ease-out .5s forwards;
 }
-.hero-name .o { color: var(--accent); }
+.hero-tagline-main {
+  font-family: var(--f-disp); font-weight: 900;
+  font-size: clamp(42px, 6.5vw, 96px);
+  line-height: .9; letter-spacing: -.02em; text-transform: uppercase;
+  color: var(--text-light);
+  margin: 12px 0 0;
+  opacity: 0; animation: fadeUp .85s ease-out .65s forwards;
+}
+.hero-tagline-main span { color: var(--accent); }
 
 .hero-rule {
   width: 100%; height: 1px; background: rgba(255,255,255,.2);
@@ -1027,6 +1079,7 @@ footer {
 @media (max-width: 480px) {
   .athletes-grid { grid-template-columns: 1fr; }
   .hero-ctas { flex-direction: column; align-items: flex-start; }
-  .hero-name { font-size: clamp(64px, 18vw, 80px); }
+  .hero-name { font-size: clamp(28px, 7vw, 42px); }
+  .hero-tagline-main { font-size: clamp(36px, 12vw, 56px); }
   .process-grid { grid-template-columns: 1fr; }
 }
