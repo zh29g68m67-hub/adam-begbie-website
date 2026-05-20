@@ -447,9 +447,23 @@ body.is-home #nav:not(.scrolled) .hamburger span { background: rgba(255,255,255,
   background: var(--bg-dark);
   padding: var(--section) 0;
   color: var(--text-light);
+  position: relative; overflow: hidden;
+}
+.quote-bg {
+  position: absolute; inset: 0;
+}
+.quote-bg img {
+  width: 100%; height: 100%;
+  object-fit: cover; object-position: center top;
+  opacity: .22;
+}
+.quote-overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(to bottom, rgba(106,98,89,.55) 0%, rgba(26,26,24,.8) 100%);
 }
 .quote-wrap {
   max-width: 860px; margin: 0 auto; text-align: center;
+  position: relative; z-index: 1;
 }
 .quote-mark {
   font-family: var(--f-disp); font-weight: 900; font-size: 120px;
