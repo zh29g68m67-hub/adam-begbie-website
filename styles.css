@@ -794,14 +794,12 @@ body.is-home #nav:not(.scrolled) .hamburger span { background: rgba(255,255,255,
 }
 
 /* ─── VIDEO BG SECTION ────────────────────────── */
-.section-video {
+/* Video hero variant for page headers */
+.page-header--video {
   position: relative;
   overflow: hidden;
 }
-.section-video .container { position: relative; z-index: 2; }
-.section-video .section-head { color: var(--text-light); }
-.section-video .lbl { color: rgba(249,115,22,.9); }
-.section-video .lbl::before { background: rgba(249,115,22,.9); }
+.page-header--video .container { position: relative; z-index: 2; }
 .bg-video {
   position: absolute; inset: 0;
   width: 100%; height: 100%;
@@ -809,7 +807,13 @@ body.is-home #nav:not(.scrolled) .hamburger span { background: rgba(255,255,255,
 }
 .bg-video-overlay {
   position: absolute; inset: 0;
-  background: rgba(20,18,15,.75);
+  background: rgba(20,18,15,.72);
+  z-index: 1;
+}
+
+/* Services grid section — z-index so dropdown overlaps next section */
+.srv-section {
+  position: relative;
   z-index: 1;
 }
 
