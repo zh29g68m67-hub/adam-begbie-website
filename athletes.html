@@ -56,20 +56,20 @@
 
         <div class="filter-bar" role="group" aria-label="Filter athletes by sport" data-filter-group="athletes">
           <button class="filter-btn active" data-filter="all">All Sports</button>
-          <button class="filter-btn" data-filter="rugby">Rugby</button>
-          <button class="filter-btn" data-filter="football">Football</button>
-          <button class="filter-btn" data-filter="athletics">Athletics</button>
-          <button class="filter-btn" data-filter="combat">Combat Sports</button>
           <button class="filter-btn" data-filter="floorball">Floorball</button>
+          <button class="filter-btn" data-filter="combat">Combat Sports</button>
+          <button class="filter-btn" data-filter="football">Football</button>
+          <button class="filter-btn" data-filter="rugby">Rugby</button>
         </div>
 
         <h2 id="athletes-h" class="sr-only">Athlete Showcase</h2>
 
         <div class="athletes-grid">
 
+          <!-- Floorball -->
           <article class="athlete-card sr" data-filter-target="athletes" data-sport="floorball">
             <div class="athlete-photo">
-              <img src="assets/images/athlete-lea-suter.jpg" alt="Lea Suter — Floorball">
+              <img src="assets/images/athlete-lea-suter.jpg" alt="Lea Suter">
             </div>
             <div class="athlete-info">
               <p class="athlete-sport">Floorball</p>
@@ -78,87 +78,94 @@
             </div>
           </article>
 
-          <article class="athlete-card sr d1" data-filter-target="athletes" data-sport="rugby">
+          <article class="athlete-card sr d1" data-filter-target="athletes" data-sport="floorball">
             <div class="athlete-photo">
-              <!-- [PHOTO: Craig Muir — rugby player, field or gym setting] -->
-              <img src="https://placehold.co/400x533/D9D4CC/6B6558?text=ATHLETE" alt="Craig Muir — Rugby Player">
+              <img src="assets/images/Raul%20Willfratt.jpg" alt="Raul Willfratt">
             </div>
             <div class="athlete-info">
-              <p class="athlete-sport">Rugby Union</p>
-              <h3 class="athlete-name">Craig Muir</h3>
-              <p class="athlete-quote">"18 months free of the hamstring problems that cost me two seasons. Best shape of my career."</p>
+              <p class="athlete-sport">Floorball</p>
+              <h3 class="athlete-name">Raul Willfratt</h3>
+              <p class="athlete-quote">"Training with Adam gave me a clear understanding of what my body needs to perform at the highest level week in, week out."</p>
+            </div>
+          </article>
+
+          <article class="athlete-card sr d2" data-filter-target="athletes" data-sport="floorball">
+            <div class="athlete-photo">
+              <img src="assets/images/Laurin%20M%C3%BCnger.jpg" alt="Laurin Münger">
+            </div>
+            <div class="athlete-info">
+              <p class="athlete-sport">Floorball</p>
+              <h3 class="athlete-name">Laurin Münger</h3>
+              <p class="athlete-quote">"The structured periodisation meant I was always physically sharp when it counted most — especially through the play-offs."</p>
+            </div>
+          </article>
+
+          <!-- Combat Sports -->
+          <article class="athlete-card sr d3" data-filter-target="athletes" data-sport="combat">
+            <div class="athlete-photo">
+              <img src="assets/images/Joshua%20Valentin.png" alt="Joshua Valentin">
+            </div>
+            <div class="athlete-info">
+              <p class="athlete-sport">Combat Sports</p>
+              <h3 class="athlete-name">Joshua Valentin</h3>
+              <p class="athlete-quote">"Adam's approach to fight preparation is different — methodical, measurable, and it shows when you're in there under pressure."</p>
+            </div>
+          </article>
+
+          <article class="athlete-card sr" data-filter-target="athletes" data-sport="combat">
+            <div class="athlete-photo">
+              <img src="assets/images/Tim-Schlapbach-portrait.jpeg" alt="Tim Schlapbach">
+            </div>
+            <div class="athlete-info">
+              <p class="athlete-sport">Muay Thai · RWS Thailand</p>
+              <h3 class="athlete-name">Tim Schlapbach</h3>
+              <p class="athlete-quote">"Non-surgical ACL rehab. Back competing at the highest level. I had doubts — Adam never did. The process was precise and the science was sound."</p>
+            </div>
+          </article>
+
+          <!-- Football -->
+          <article class="athlete-card sr d1" data-filter-target="athletes" data-sport="football">
+            <div class="athlete-photo">
+              <img src="assets/images/Linus-Obexer.jpg" alt="Linus Obexer">
+            </div>
+            <div class="athlete-info">
+              <p class="athlete-sport">Football</p>
+              <h3 class="athlete-name">Linus Obexer</h3>
+              <p class="athlete-quote">"The physical qualities Adam develops — speed, strength, power — are exactly what professional football demands. It shows on the pitch."</p>
             </div>
           </article>
 
           <article class="athlete-card sr d2" data-filter-target="athletes" data-sport="football">
             <div class="athlete-photo">
-              <!-- [PHOTO: Zara Campbell — footballer, training setting] -->
-              <img src="https://placehold.co/400x533/D9D4CC/6B6558?text=ATHLETE" alt="Zara Campbell — Footballer">
+              <img src="assets/images/Jo%C3%ABl%20Schmied.jpg" alt="Joël Schmied">
             </div>
             <div class="athlete-info">
               <p class="athlete-sport">Football</p>
-              <h3 class="athlete-name">Zara Campbell</h3>
-              <p class="athlete-quote">"The periodisation around my season was the best part — I peaked when it mattered and never over-trained."</p>
+              <h3 class="athlete-name">Joël Schmied</h3>
+              <p class="athlete-quote">"Working with Adam took my physical preparation to a level that genuinely matches the demands of professional football."</p>
             </div>
           </article>
 
-          <article class="athlete-card sr d3" data-filter-target="athletes" data-sport="combat">
+          <!-- Rugby -->
+          <article class="athlete-card sr d3" data-filter-target="athletes" data-sport="rugby">
             <div class="athlete-photo">
-              <!-- [PHOTO: Marcus Reid — MMA fighter, gym setting] -->
-              <img src="https://placehold.co/400x533/D9D4CC/6B6558?text=ATHLETE" alt="Marcus Reid — MMA Fighter">
+              <img src="assets/images/Leo-Luginbuehl.jpg" alt="Leo Luginbühl">
             </div>
             <div class="athlete-info">
-              <p class="athlete-sport">MMA / Combat Sports</p>
-              <h3 class="athlete-name">Marcus Reid</h3>
-              <p class="athlete-quote">"Strength went up without losing an ounce of speed or endurance. The cutting protocol around fight week was exceptional."</p>
+              <p class="athlete-sport">Rugby</p>
+              <h3 class="athlete-name">Leo Luginbühl</h3>
+              <p class="athlete-quote">"The pre-season block Adam designed was the most physically prepared I've ever felt going into a season. Every session had a clear purpose."</p>
             </div>
           </article>
 
-          <article class="athlete-card sr" data-filter-target="athletes" data-sport="athletics">
+          <article class="athlete-card sr" data-filter-target="athletes" data-sport="rugby">
             <div class="athlete-photo">
-              <!-- [PHOTO: Freya Olsen — pole vaulter] -->
-              <img src="https://placehold.co/400x533/D9D4CC/6B6558?text=ATHLETE" alt="Freya Olsen — Pole Vault">
+              <img src="assets/images/David-Stoffel.jpg" alt="David Stoffel">
             </div>
             <div class="athlete-info">
-              <p class="athlete-sport">Athletics</p>
-              <h3 class="athlete-name">Freya Olsen</h3>
-              <p class="athlete-quote">"The force-velocity work was a game changer. My approach speed and plant mechanics improved more in 6 months than in the previous 3 years."</p>
-            </div>
-          </article>
-
-          <article class="athlete-card sr d1" data-filter-target="athletes" data-sport="rugby">
-            <div class="athlete-photo">
-              <!-- [PHOTO: Callum Fraser — rugby back row] -->
-              <img src="https://placehold.co/400x533/D9D4CC/6B6558?text=ATHLETE" alt="Callum Fraser — Rugby Back Row">
-            </div>
-            <div class="athlete-info">
-              <p class="athlete-sport">Rugby Union</p>
-              <h3 class="athlete-name">Callum Fraser</h3>
-              <p class="athlete-quote">"Pre-season was the hardest work I've ever done — but the carry-over into the season was unreal. Never felt so physically dominant."</p>
-            </div>
-          </article>
-
-          <article class="athlete-card sr d2" data-filter-target="athletes" data-sport="football">
-            <div class="athlete-photo">
-              <!-- [PHOTO: Ryan Lau — midfielder, training] -->
-              <img src="https://placehold.co/400x533/D9D4CC/6B6558?text=ATHLETE" alt="Ryan Lau — Footballer">
-            </div>
-            <div class="athlete-info">
-              <p class="athlete-sport">Football</p>
-              <h3 class="athlete-name">Ryan Lau</h3>
-              <p class="athlete-quote">"Working with Adam took my physical development out of the generic gym routine and into something actually designed for what football demands."</p>
-            </div>
-          </article>
-
-          <article class="athlete-card sr d3" data-filter-target="athletes" data-sport="combat">
-            <div class="athlete-photo">
-              <!-- [PHOTO: Priya Sharma — boxing] -->
-              <img src="https://placehold.co/400x533/D9D4CC/6B6558?text=ATHLETE" alt="Priya Sharma — Boxer">
-            </div>
-            <div class="athlete-info">
-              <p class="athlete-sport">Boxing</p>
-              <h3 class="athlete-name">Priya Sharma</h3>
-              <p class="athlete-quote">"My power output in the gym went up 22% in one camp cycle. Adam tracks everything — you can see exactly how far you've come."</p>
+              <p class="athlete-sport">Rugby</p>
+              <h3 class="athlete-name">David Stoffel</h3>
+              <p class="athlete-quote">"Every session had a target and a reason. The carry-over from the gym into match performance was something I hadn't experienced before."</p>
             </div>
           </article>
 
