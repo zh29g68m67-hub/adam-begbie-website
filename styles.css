@@ -728,7 +728,7 @@ body.is-home #nav:not(.scrolled) .hamburger span { background: rgba(255,255,255,
   z-index: 1;
 }
 .srv-card-img {
-  aspect-ratio: 3/2;
+  aspect-ratio: 4/3;
   overflow: hidden;
   background: var(--bg-alt);
 }
@@ -760,7 +760,11 @@ body.is-home #nav:not(.scrolled) .hamburger span { background: rgba(255,255,255,
 .srv-list {
   display: flex; flex-direction: column; gap: 7px;
   margin-bottom: 28px; flex: 1;
+  opacity: 0;
+  transition: opacity .3s ease;
 }
+.srv-card:hover .srv-list { opacity: 1; }
+@media (hover: none) { .srv-list { opacity: 1; } }
 .srv-list li {
   font-size: 13px; color: var(--text-muted);
   display: flex; align-items: flex-start; gap: 9px; line-height: 1.5;
