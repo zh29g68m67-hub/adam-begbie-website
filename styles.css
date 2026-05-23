@@ -721,7 +721,6 @@ body.is-home #nav:not(.scrolled) .hamburger span { background: rgba(255,255,255,
   display: flex; flex-direction: column;
   transition: box-shadow .25s ease, transform .25s ease;
   position: relative;
-  overflow: visible;
 }
 .srv-card-body .btn { margin-top: auto; align-self: flex-start; }
 .srv-card:hover {
@@ -755,28 +754,28 @@ body.is-home #nav:not(.scrolled) .hamburger span { background: rgba(255,255,255,
   text-transform: uppercase; letter-spacing: .01em; line-height: 1.1;
   margin-bottom: 14px;
 }
-.srv-card > .srv-card-body > p {
+.srv-content {
+  display: grid;
+  flex: 1;
+  margin-bottom: 24px;
+}
+.srv-desc,
+.srv-list {
+  grid-area: 1 / 1;
+  transition: opacity .3s ease;
+}
+.srv-desc {
   font-size: 14px; color: var(--text-muted); line-height: 1.75;
-  margin-bottom: 18px;
 }
 .srv-list {
-  position: absolute;
-  left: -1px; right: -1px;
-  top: calc(100% - 1px);
-  background: var(--surface);
-  border: 1px solid var(--border);
   display: flex; flex-direction: column; gap: 7px;
-  padding: 0 28px;
-  max-height: 0; overflow: hidden;
   opacity: 0;
-  z-index: 20;
-  transition: max-height .4s ease, opacity .3s ease, padding .3s ease;
 }
-.srv-card:hover .srv-list {
-  max-height: 260px; opacity: 1; padding: 20px 28px 24px;
-}
+.srv-card:hover .srv-desc { opacity: 0; }
+.srv-card:hover .srv-list  { opacity: 1; }
 @media (hover: none) {
-  .srv-list { max-height: 260px; opacity: 1; padding: 20px 28px 24px; }
+  .srv-desc { opacity: 0; }
+  .srv-list  { opacity: 1; }
 }
 .srv-list li {
   font-size: 13px; color: var(--text-muted);
