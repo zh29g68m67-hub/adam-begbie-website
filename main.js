@@ -100,6 +100,29 @@
   });
 })();
 
+/* ── ABOUT TABS ──────────────────────────────── */
+(function () {
+  const tabs = document.querySelectorAll('.about-tab');
+  if (!tabs.length) return;
+
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      document.querySelectorAll('.about-tab').forEach(t => {
+        t.classList.remove('active');
+        t.setAttribute('aria-selected', 'false');
+      });
+      document.querySelectorAll('.about-panel').forEach(p => {
+        p.classList.remove('active');
+        p.hidden = true;
+      });
+      tab.classList.add('active');
+      tab.setAttribute('aria-selected', 'true');
+      const panel = document.getElementById(tab.dataset.tab);
+      if (panel) { panel.classList.add('active'); panel.hidden = false; }
+    });
+  });
+})();
+
 /* ── FAQ ACCORDION ───────────────────────────── */
 (function () {
   document.querySelectorAll('.faq-item').forEach(item => {
