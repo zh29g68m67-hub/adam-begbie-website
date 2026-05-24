@@ -751,8 +751,12 @@ body.is-home #nav:not(.scrolled) .hamburger span { background: rgba(255,255,255,
 .about-tab:hover { color: var(--text); }
 .about-tab.active { color: var(--accent); border-bottom-color: var(--accent); }
 
-.about-panel { display: none; }
-.about-panel.active { display: block; }
+.about-panels { display: grid; }
+.about-panel {
+  grid-row: 1; grid-column: 1;
+  visibility: hidden; pointer-events: none;
+}
+.about-panel.active { visibility: visible; pointer-events: auto; }
 .about-panel p {
   font-size: clamp(16px, 1.7vw, 18px);
   line-height: 1.85; color: var(--text-muted);

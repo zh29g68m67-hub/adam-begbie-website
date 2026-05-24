@@ -111,14 +111,11 @@
         t.classList.remove('active');
         t.setAttribute('aria-selected', 'false');
       });
-      document.querySelectorAll('.about-panel').forEach(p => {
-        p.classList.remove('active');
-        p.hidden = true;
-      });
+      document.querySelectorAll('.about-panel').forEach(p => p.classList.remove('active'));
       tab.classList.add('active');
       tab.setAttribute('aria-selected', 'true');
       const panel = document.getElementById(tab.dataset.tab);
-      if (panel) { panel.classList.add('active'); panel.hidden = false; }
+      if (panel) panel.classList.add('active');
     });
   });
 })();
